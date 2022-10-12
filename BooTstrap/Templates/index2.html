@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bootstrap Course </title>
+
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="../Assets/css/bootstrap.min.css" >
+    <!-- <link rel="stylesheet" href="../Assets/css/style.css" > -->
+
+</head>
+<body>
+    
+    <div class="container-fluid text-center">
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row">
+          <div class="col-md-8 col-6 bg-secondary">.col-md-8</div>
+          <div class="col-6 col-md-4 bg-danger">.col-6 .col-md-4</div>
+        </div>
+      
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div class="row">
+          <div class="col-6 col-md-4 bg-secondary">.col-6 .col-md-4</div>
+          <div class="col-6 col-md-4 bg-dark">.col-6 .col-md-4</div>
+          <div class="col-6 col-md-4 bg-primary">.col-6 .col-md-4</div>
+        </div>
+      
+        <!-- Columns are always 50% wide, on mobile and desktop -->
+        <div class="row">
+          <div class="col-6 bg-info">.col-6</div>
+          <div class="col-6 bg-danger">.col-6</div>
+        </div>
+      </div>
+ 
+
+      <div class="container text-center">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+          <div class="col">Column</div>
+          <div class="col">Column</div>
+          <div class="col">Column</div>
+          <div class="col">Column</div>
+        </div>
+      </div>
+
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-4">.col-md-4</div>
+          <div class="col-md-4 offset-md-4">.col-md-4 .offset-md-4</div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+          <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
+        </div>
+      </div>
+
+      <div class="container text-center">
+        <div class="row">
+          <div class="col order-last">
+            First in DOM, ordered last
+          </div>
+          <div class="col">
+            Second in DOM, unordered
+          </div>
+          <div class="col order-first">
+            Third in DOM, ordered first
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+          <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+      
+          <!-- Force next columns to break to new line at md breakpoint and up -->
+          <div class="w-100 d-none d-md-block"></div>
+      
+          <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+          <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+        </div>
+
+        <div class="container-fluid well">
+          <div class="rows">
+           <div class="col-md-4">
+            box1
+           </div>
+           <div class="col-md-4">
+             box2
+           </div>
+           <div class="col-md-4">
+             box 3
+           </div>
+          </div>
+      </div>
+
+      <ul class="nav nav-tabs list-inline-item">
+        <li class="active">
+          <a href="#">Home</a></li>
+        <li><a href="#">Menu 1</a></li>
+        <li><a href="#">Menu 2</a></li>
+        <li><a href="#">Menu 3</a></li>
+      </ul>
+
+      </div>
+ 
+ <!--bootstrap jquery&js-->
+ <script src="../Assets/js/jquery.min.js"></script>
+ <script src="../Assets/js/bootstrap.min.js"></script>
+
+</body>
+</html>

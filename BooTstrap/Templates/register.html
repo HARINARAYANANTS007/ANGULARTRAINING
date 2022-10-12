@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bootstrap Register </title>
+
+    <link rel="stylesheet" href="../Assets/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="../Assets/css/style.css" >
+
+</head>
+<body id="bgimage">
+
+    <div class="container-fluid p-3 bg-dark text-dark text-center" id="header">
+        <h1> REGISTER FORM </h1>
+    </div>
+    
+    <div>
+        
+        <form onsubmit="return validate();" action="../Templates/login.html" method="get" >
+
+            <div class="row pt-5">
+                <div class="col-4"></div>
+                    <div class="col-2 p-2">
+                        <label for="fn" class="form-label fw-bolder">FIRST NAME :</label>
+                    </div>
+                    <div class="col-3">
+                        <input type="text" class="form-control" id="fn" name="firstname" placeholder="Enter Your First Name" >
+                    </div>
+                <div class="col-3"></div>
+            </div>
+
+            <div class="row pt-2">
+                <div class="col-4"></div>
+                    <div class="col-2 p-2">
+                        <label for="ln" class="form-label fw-bolder">LAST NAME :</label>
+                    </div>
+                    <div class="col-3">
+                        <input type="text" class="form-control" id="ln" name="lastname" placeholder="Enter Your Last Name" >
+                    </div>
+                <div class="col-3"></div>
+            </div>
+
+            <div class="row pt-2">
+                <div class="col-4"></div>
+                    <div class="col-2 p-2">
+                        <label for="un" class="form-label fw-bolder">USERNAME :</label>
+                    </div>
+                    <div class="col-3">
+                        <input type="text" class="form-control" id="un" name="username" placeholder="Enter Your Username" >
+                    </div>
+                <div class="col-3"></div>
+            </div>
+
+            <div class="row pt-2">
+                <div class="col-4"></div>
+                    <div class="col-2 p-2">
+                        <label for="pwd" class="form-label fw-bolder">PASSWORD :</label>
+                    </div>
+                    <div class="col-3">
+                        <input type="password" class="form-control " id="pwd" name="password" placeholder="Enter Your Password" >
+                    </div>
+                <div class="col-3"></div>
+            </div>
+
+            <div class="row pt-2">
+                <div class="col-4"></div>
+                    <div class="col-2 p-2">
+                        <label for="email" class="form-label fw-bolder">EMAIL ID :</label>
+                    </div>
+                    <div class="col-3">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email" >
+                    </div>
+                <div class="col-3"></div>
+            </div>
+
+            <div class="row pt-2">
+                <div class="col-4"></div>
+                    <div class="col-2 p-2">
+                        <label for="no" class="form-label fw-bolder">MOBILE NO :</label>
+                    </div>
+                    <div class="col-3">
+                        <input type="text" class="form-control" id="no" name="mobileno" placeholder="Enter Your Mobile Number" >
+                    </div>
+                <div class="col-3"></div>
+            </div>
+
+            <div class="d-flex justify-content-center pt-2">
+                <div class="form-check mx-5">
+                    <input type="radio" class="form-check-input" id="radio1" name="gender" value="male" >
+                    <label class="form-check-label fw-bolder" for="radio1">MALE</label>
+                </div>
+                <div class="form-check mx-5">
+                    <input type="radio" class="form-check-input" id="radio2" name="gender" value="female" >
+                    <label class="form-check-label fw-bolder" for="radio2">FEMALE</label>
+                </div>
+            </div>
+            
+            <div class="d-flex justify-content-center pt-2">
+                <div class="mx-5">
+                    <select class="form-select" aria-label="Default select example" >
+                        <option value="">SELECT STATE</option>
+                        <option>Andhra Pradesh</option>
+                        <option>Goa</option>
+                        <option>Gujarat</option>
+                        <option>Karnataka</option>
+                        <option>Kerala</option>
+                        <option>Maharashtra</option>
+                        <option>Rajasthan</option>
+                        <option>Tamil Nadu</option>
+                        <option>Telangana</option>
+                        <option>Uttar Pradesh</option>
+                        <option>West Bengal</option>
+                    </select>
+                </div>
+                <div class="mx-5">
+                    <select class="form-select" aria-label="Default select example" >
+                        <option value="">SELECT DISTRICT</option>
+                        <option>Amaravati</option>
+                        <option>Panaji</option>
+                        <option>Gandhinagar</option>
+                        <option>Bengaluru</option>
+                        <option>Trivandrum</option>
+                        <option>Mumbai</option>
+                        <option>Jaipur</option>
+                        <option>Chennai</option>
+                        <option>Hyderabad</option>
+                        <option>Lucknow</option>
+                        <option>Kolkata</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="d-flex justify-content-center pt-3">
+                <button type="submit" class="btn btn-danger">Register</button>
+            </div>
+            
+        </form>
+                
+    </div>
+
+    <script>
+        
+    //     function validate()
+    //     {
+    //         var firstname = document.getElementById("fn");
+    //         var lastname = document.getElementById("ln");
+    //         var username = document.getElementById("un");
+    //         var password = document.getElementById("pwd");
+        
+
+    //     if(firstname.value=="" && lastname.value=="" && username.value=="" && password.value=="")
+    //     {
+    //         alert("Hello User! fields must be filled out");
+    //         return false;
+    //     }
+    //     else
+    //     {
+    //         true;
+    //     }
+
+    // }
+
+    function validate()
+        {
+            var Username = document.getElementById("un").value;
+            var Password = document.getElementById("pwd").value;
+        
+        if(Username == "")
+        {
+            alert("Hello User! Username should not empty");
+            return false;
+        }
+        if(Password =="")
+        {
+            alert("Hello User! Password should not empty");
+            return false;
+        }
+        if(Password.length<7)
+        {
+            alert("Hello User! Password too short");
+            return false;
+        }
+        // else{
+        //     return true;
+        // }
+
+    }
+
+    </script>
+       
+    <script src="../Assets/js/jquery.min.js"></script>
+    <script src="../Assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

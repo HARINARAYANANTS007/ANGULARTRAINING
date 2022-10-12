@@ -1,0 +1,30 @@
+/* body{
+    background-color: rgb(9, 125, 225);
+}
+div{
+    background-color: rgb(36, 209, 228);
+}
+.p50{
+    padding: 50px;
+    border: 2px solid black;
+}
+.bg{
+    padding: 5px;
+    background-color:antiquewhite;
+    font-weight: bold;
+    border: 2px solid crimson;
+}
+form{
+    margin-left: 200px;
+} */
+
+#bgimage {
+    background-image: url(../images/pexels-fwstudio-129731.jpg);
+    font-family: Verdana;
+}
+#header {
+    background-image: url(../images/leaves.webp);
+    background-color:darkcyan ;
+    width:fit-content;
+    border-radius: 20px;
+}
